@@ -1,0 +1,19 @@
+# Main environment (data pipeline, bicubic, Real-ESRGAN, SD x4, metrics)
+numpy
+opencv-python     # MIL tracker included; Exp 1's contrib build also works
+scikit-image
+pillow
+tqdm
+torch
+torchvision
+lpips
+spandrel
+pyiqa             # only for evaluate.py --nr (CLIP-IQA, MUSIQ)
+diffusers
+transformers
+accelerate
+# Target tracking for REDS / your own clips (DAVIS uses its GT masks instead):
+#   pip install "git+https://github.com/facebookresearch/sam2.git"
+#   pip install ultralytics        # only for --targets sam2_detect
+gradio            # demo
+matplotlib        # runtime chart
